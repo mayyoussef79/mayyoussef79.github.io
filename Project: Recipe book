@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Recipe Book</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff6f61;
+      padding: 2rem;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .recipes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .recipe-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .recipe-card:hover {
+      transform: scale(1.03);
+    }
+
+    .recipe-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .recipe-card-content {
+      padding: 1rem;
+    }
+
+    .recipe-card h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .recipe-card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .recipes {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍲 My Recipe Book</h1>
+    <p>Discover delicious homemade recipes</p>
+  </header>
+
+  <div class="container">
+    <div class="intro">
+      <h2>Featured Recipes</h2>
+      <p>From comfort food to healthy meals, find recipes for every craving!</p>
+    </div>
+
+    <div class="recipes">
+      <div class="recipe-card">
+        <img src="https://images.unsplash.com/photo-1606788075761-1a58a46d52e6?auto=format&fit=crop&w=800&q=60" alt="Spaghetti Bolognese">
+        <div class="recipe-card-content">
+          <h3>Spaghetti Bolognese</h3>
+          <p>A classic Italian pasta dish made with a rich, meaty sauce.</p>
+        </div>
+      </div>
+
+      <div class="recipe-card">
+        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=800&q=60" alt="Avocado Toast">
+        <div class="recipe-card-content">
+          <h3>Avocado Toast</h3>
+          <p>Simple and healthy breakfast with smashed avocado, chili flakes & lemon.</p>
+        </div>
+      </div>
+
+      <div class="recipe-card">
+        <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=800&q=60" alt="Chocolate Cake">
+        <div class="recipe-card-content">
+          <h3>Chocolate Cake</h3>
+          <p>Moist, rich chocolate cake topped with creamy chocolate frosting.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Recipe Book. Made with ❤️ and a pinch of salt.</p>
+  </footer>
+
+</body>
+</html>
